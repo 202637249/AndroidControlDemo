@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">AndroidUI控件练习</string>
+
+    <string name="my_toast">String文件</string>
+</resources>

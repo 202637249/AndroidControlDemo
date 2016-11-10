@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.lzq.androidcontroldemo.MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Android基本控件" />
+
+    <Button
+        android:id="@+id/activity_toasts"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Toast"/>
+
+    <Button
+        android:id="@+id/activity_view_page"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="viewPage"/>
+
+    <Button
+        android:id="@+id/activity_ndk"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="NDK测试"/>
+
+    <Button
+        android:id="@+id/activity_webView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="webView"/>
+    
+
+
+</LinearLayout>

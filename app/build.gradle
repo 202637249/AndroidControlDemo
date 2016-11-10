@@ -1,0 +1,33 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 24
+    buildToolsVersion "23.0.3"
+
+    defaultConfig {
+        applicationId "com.lzq.androidcontroldemo"
+        minSdkVersion 11
+        targetSdkVersion 22
+        versionCode 1
+        versionName "1.0"
+        ndk{
+            moduleName "com_lzq_androidcontroldemo_utils_NdkUtil"
+            abiFilters "armeabi","armeabi-v7a","x86"
+            cFlags "-DANDROID_NDK " // Define some macros
+            ldLibs "EGL", "GLESv3", "dl", "log"         // Link with these libraries!
+            stl "stlport_shared"
+        }
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    testCompile 'junit:junit:4.12'
+    compile 'com.android.support:appcompat-v7:24.0.0-alpha2'
+}
